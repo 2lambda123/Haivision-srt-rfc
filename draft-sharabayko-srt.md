@@ -1,4 +1,5 @@
 ---
+
 title: The SRT Protocol
 abbrev: SRT
 docname: draft-sharabayko-srt-latest
@@ -14,160 +15,141 @@ stand_alone: yes
 pi: [toc, sortrefs, symrefs]
 
 author:
- -
-    ins: "M.P. Sharabayko"
-    name: "Maxim Sharabayko"
-    organization: "Haivision Network Video, GmbH"
-    email: maxsharabayko@haivision.com
- -
-    ins: "M.A. Sharabayko"
-    name: "Maria Sharabayko"
-    organization: "Haivision Network Video, GmbH"
-    email: msharabayko@haivision.com
- -
-    ins: "J. Dube"
-    name: "Jean Dube"
-    organization: "Haivision Systems, Inc."
-    email: jdube@haivision.com
- -
-    ins: "JS. Kim"
-    name: "Jeongseok Kim"
-    organization: "SK Telecom Co., Ltd."
-    email: jeongseok.kim@sk.com
- -
-    ins: "JW. Kim"
-    name: "Joonwoong Kim"
-    organization: "SK Telecom Co., Ltd."
-    email: joonwoong.kim@sk.com
+
+- ins: "M.P. Sharabayko"
+  name: "Maxim Sharabayko"
+  organization: "Haivision Network Video, GmbH"
+  email: maxsharabayko@haivision.com
+- ins: "M.A. Sharabayko"
+  name: "Maria Sharabayko"
+  organization: "Haivision Network Video, GmbH"
+  email: msharabayko@haivision.com
+- ins: "J. Dube"
+  name: "Jean Dube"
+  organization: "Haivision Systems, Inc."
+  email: jdube@haivision.com
+- ins: "JS. Kim"
+  name: "Jeongseok Kim"
+  organization: "SK Telecom Co., Ltd."
+  email: jeongseok.kim@sk.com
+- ins: "JW. Kim"
+  name: "Joonwoong Kim"
+  organization: "SK Telecom Co., Ltd."
+  email: joonwoong.kim@sk.com
 
 normative:
-  RFC2119:
-  RFC0768:
-  GHG04b:
-    title: Experiences in Design and Implementation of a High Performance Transport Protocol
-    author:
-      -
-        name: Yunhong Gu
-      -
-        name: Xinwei Hong
-      -
-        name: Robert L. Grossman
-    date: December, 2004
-    seriesinfo:
-      DOI: 10.1109/SC.2004.24
+RFC2119:
+RFC0768:
+GHG04b:
+title: Experiences in Design and Implementation of a High Performance Transport Protocol
+author: -
+name: Yunhong Gu -
+name: Xinwei Hong -
+name: Robert L. Grossman
+date: December, 2004
+seriesinfo:
+DOI: 10.1109/SC.2004.24
 
 informative:
-  AES:
-    target: http://csrc.nist.gov/publications/fips/fips197/fips-197.pdf
-    title: "FIPS Pub 197: Advanced Encryption Standard (AES)"
-    author:
-      org: National Institute of Standards and Technology
-    date: 26 November, 2001
-  RFC2104:
-  RFC8018:
-  RFC8174:
-  RFC8216:
-  RFC3031:
-  RFC3394:
-  RFC6528:
-  RFC8312:
-  RFC4987:
-  RFC7714:
-  RFC9000:
-  RFC9114:
-  GuAnAO:
-    title: An Analysis of AIMD Algorithm with Decreasing Increases
-    author:
-      -
-        name: Yunhong Gu
-      -
-        name: Xinwei Hong
-      -
-        name: Robert L. Grossman
-    seriesinfo: Proceedings of the 1st International Workshop on Networks for Grid Applications (GridNets ’04)
-    date: October, 2004
-  BBR:
-    title: "BBR: Congestion-Based Congestion Control"
-    author:
-      -
-        name: Neal Cardwell
-      -
-        name: Yuchung Cheng
-      -
-        name: C. Stephen Gunn
-      -
-        name: Soheil Hassas Yeganeh
-      -
-        name: Van Jacobson
-    seriesinfo: ACM Queue, vol. 14
-    date: September-October, 2016
-  PNPID:
-    target: https://uefi.org/PNP_ACPI_Registry
-    title: PNP ID AND ACPI ID REGISTRY
-    date: none
-  SP800-38A:
-    title: Recommendation for Block Cipher Modes of Operation
-    author:
-      name: Morris Dworkin
-      ins: M. Dworkin
-    date: December, 2001
-  SRTTO:
-    title: SRT Protocol Technical Overview
-    author:
-      -
-        name: Jean Dube
-      -
-        name: Steve Matthews
-    date: December, 2019
-  RTMP:
-    target: https://www.adobe.com/devnet/rtmp.html
-    title: Real-Time Messaging Protocol
-    date: none
-  ISO23009:
-    title: Information technology - Dynamic adaptive streaming over HTTP (DASH)
-    author:
-      org: ISO
-    date: none
-    seriesinfo:
-      "ISO/IEC": 23009:2019
-  ISO13818-1:
-    title: >
-      Information technology
-      — Generic coding of moving pictures and associated audio information:
-      Systems
-    author:
-      org: ISO
-    date: none
-    seriesinfo:
-      "ISO/IEC": 13818-1
-  H.265:
-    title: "H.265 : High efficiency video coding"
-    author:
-      org: International Telecommunications Union
-    date: 2019
-    seriesinfo:
-      ITU-T: "Recommendation H.265"
-  VP9:
-    target: https://www.webmproject.org/vp9
-    title: VP9 Video Codec
-    author:
-      org: WebM
-    date: none
-  AV1:
-    target: https://aomediacodec.github.io/av1-spec/av1-spec.pdf
-    title: AV1 Bitstream & Decoding Process Specification
-    author:
-      -
-        name: Peter de Rivaz
-        org: Argon Design Ltd
-      -
-        name: Jack Haughton
-        org: Argon Design Ltd
-    date: none
-  SRTSRC:
-    target: https://github.com/Haivision/srt
-    title: SRT fully functional reference implementation
-    date: none
+AES:
+target: http://csrc.nist.gov/publications/fips/fips197/fips-197.pdf
+title: "FIPS Pub 197: Advanced Encryption Standard (AES)"
+author:
+org: National Institute of Standards and Technology
+date: 26 November, 2001
+RFC2104:
+RFC8018:
+RFC8174:
+RFC8216:
+RFC3031:
+RFC3394:
+RFC6528:
+RFC8312:
+RFC4987:
+RFC7714:
+RFC9000:
+RFC9114:
+GuAnAO:
+title: An Analysis of AIMD Algorithm with Decreasing Increases
+author: -
+name: Yunhong Gu -
+name: Xinwei Hong -
+name: Robert L. Grossman
+seriesinfo: Proceedings of the 1st International Workshop on Networks for Grid Applications (GridNets ’04)
+date: October, 2004
+BBR:
+title: "BBR: Congestion-Based Congestion Control"
+author: -
+name: Neal Cardwell -
+name: Yuchung Cheng -
+name: C. Stephen Gunn -
+name: Soheil Hassas Yeganeh -
+name: Van Jacobson
+seriesinfo: ACM Queue, vol. 14
+date: September-October, 2016
+PNPID:
+target: https://uefi.org/PNP_ACPI_Registry
+title: PNP ID AND ACPI ID REGISTRY
+date: none
+SP800-38A:
+title: Recommendation for Block Cipher Modes of Operation
+author:
+name: Morris Dworkin
+ins: M. Dworkin
+date: December, 2001
+SRTTO:
+title: SRT Protocol Technical Overview
+author: -
+name: Jean Dube -
+name: Steve Matthews
+date: December, 2019
+RTMP:
+target: https://www.adobe.com/devnet/rtmp.html
+title: Real-Time Messaging Protocol
+date: none
+ISO23009:
+title: Information technology - Dynamic adaptive streaming over HTTP (DASH)
+author:
+org: ISO
+date: none
+seriesinfo:
+"ISO/IEC": 23009:2019
+ISO13818-1:
+title: >
+Information technology
+— Generic coding of moving pictures and associated audio information:
+Systems
+author:
+org: ISO
+date: none
+seriesinfo:
+"ISO/IEC": 13818-1
+H.265:
+title: "H.265 : High efficiency video coding"
+author:
+org: International Telecommunications Union
+date: 2019
+seriesinfo:
+ITU-T: "Recommendation H.265"
+VP9:
+target: https://www.webmproject.org/vp9
+title: VP9 Video Codec
+author:
+org: WebM
+date: none
+AV1:
+target: https://aomediacodec.github.io/av1-spec/av1-spec.pdf
+title: AV1 Bitstream & Decoding Process Specification
+author: -
+name: Peter de Rivaz
+org: Argon Design Ltd -
+name: Jack Haughton
+org: Argon Design Ltd
+date: none
+SRTSRC:
+target: https://github.com/Haivision/srt
+title: SRT fully functional reference implementation
+date: none
 
 --- abstract
 
@@ -286,7 +268,7 @@ PRNG:
 SRT packets are transmitted as UDP payload {{RFC0768}}. Every UDP packet carrying SRT
 traffic contains an SRT header immediately after the UDP header ({{srt-in-udp}}).
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -298,7 +280,8 @@ traffic contains an SRT header immediately after the UDP header ({{srt-in-udp}})
 +                          SRT Packet                           +
 |                                                               |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #srt-in-udp title="SRT packet as UDP payload"}
 
 SRT has two types of packets distinguished by the Packet Type Flag:
@@ -306,7 +289,7 @@ data packet and control packet.
 
 The structure of the SRT packet is shown in {{srtpacket}}.
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+- SRT Header +-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -323,28 +306,29 @@ The structure of the SRT packet is shown in {{srtpacket}}.
 |                  (depends on the packet type)                 +
 |                                                               |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #srtpacket title="SRT packet structure"}
 
 F: 1 bit.
 : Packet Type Flag. The control packet has this flag set to "1".
-  The data packet has this flag set to "0".
+The data packet has this flag set to "0".
 
 Timestamp: 32 bits.
 : The timestamp of the packet, in microseconds.
-  The value is relative to the time the SRT connection was established.
-  Depending on the transmission mode ({{data-transmission-modes}}),
-  the field stores the packet send time or the packet origin time.
+The value is relative to the time the SRT connection was established.
+Depending on the transmission mode ({{data-transmission-modes}}),
+the field stores the packet send time or the packet origin time.
 
 Destination SRT Socket ID: 32 bits.
 : A fixed-width field providing the SRT socket ID to which a packet should be dispatched.
-  The field may have the special value "0" when the packet is a connection request.
+The field may have the special value "0" when the packet is a connection request.
 
 ## Data Packets {#data-pkt}
 
 The structure of the SRT data packet is shown in {{srtdatapacket}}.
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+- SRT Header +-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -363,7 +347,8 @@ The structure of the SRT data packet is shown in {{srtdatapacket}}.
 |                       Authentication Tag                      |
 |                        (GCM: 16 bytes)                        |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #srtdatapacket title="Data packet structure"}
 
 Packet Sequence Number: 31 bits.
@@ -371,24 +356,24 @@ Packet Sequence Number: 31 bits.
 
 PP: 2 bits.
 : Packet Position Flag. This field indicates the position of the data packet in the message.
-  The value "10b" (binary) means the first packet of the message. "00b" indicates a packet
-  in the middle. "01b" designates the last packet. If a single data packet forms the whole
-  message, the value is "11b".
+The value "10b" (binary) means the first packet of the message. "00b" indicates a packet
+in the middle. "01b" designates the last packet. If a single data packet forms the whole
+message, the value is "11b".
 
 O: 1 bit.
 : Order Flag. Indicates whether the message should be delivered by the receiver in order (1)
-  or not (0). Certain restrictions apply depending on the data transmission mode used
-  ({{data-transmission-modes}}).
+or not (0). Certain restrictions apply depending on the data transmission mode used
+({{data-transmission-modes}}).
 
 KK: 2 bits.
 : Key-based Encryption Flag. The flag bits indicate whether or not data is encrypted.
-  The value "00b" (binary) means data is not encrypted. "01b" indicates that data is
-  encrypted with an even key, and "10b" is used for odd key encryption. Refer to {{encryption}}.
-  The value "11b" is only used in control packets.
+The value "00b" (binary) means data is not encrypted. "01b" indicates that data is
+encrypted with an even key, and "10b" is used for odd key encryption. Refer to {{encryption}}.
+The value "11b" is only used in control packets.
 
 R: 1 bit.
 : Retransmitted Packet Flag. This flag is clear when a packet is transmitted the first time.
-  The flag is set to "1" when a packet is retransmitted.
+The flag is set to "1" when a packet is retransmitted.
 
 Message Number: 26 bits.
 : The sequential number of consecutive data packets that form a message (see PP field).
@@ -401,7 +386,7 @@ Destination SRT Socket ID: 32 bits.
 
 Payload: variable length.
 : The payload of the data packet. The length of the data is the remaining length of
-  the UDP packet.
+the UDP packet.
 
 Authentication Tag: optional, 128 bits in case of AES-GCM.
 : The message authentication tag (AES-GCM). The field is only present if AES-GCM crypto mode has been negotiated.
@@ -410,7 +395,7 @@ Authentication Tag: optional, 128 bits in case of AES-GCM.
 
 An SRT control packet has the following structure.
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+- SRT Header +-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -426,20 +411,21 @@ An SRT control packet has the following structure.
 +                   Control Information Field                   +
 |                                                               |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #controlpacket title="Control packet structure"}
 
 Control Type: 15 bits.
 : Control Packet Type. The use of these bits is determined
-  by the control packet type definition. See {{srt-ctrl-pkt-type-table}}.
+by the control packet type definition. See {{srt-ctrl-pkt-type-table}}.
 
 Subtype: 16 bits.
 : This field specifies an additional subtype for specific packets.
-  See {{srt-ctrl-pkt-type-table}}.
+See {{srt-ctrl-pkt-type-table}}.
 
 Type-specific Information: 32 bits.
 : The use of this field depends on the particular control
-  packet type. Handshake packets do not use this field.
+packet type. Handshake packets do not use this field.
 
 Timestamp: 32 bits.
 : See {{packet-structure}}.
@@ -454,18 +440,18 @@ The types of SRT control packets are shown in {{srt-ctrl-pkt-type-table}}.
 The value "0x7FFF" is reserved for a user-defined type.
 
 | ------------------ | ------------ | ------- | -------------------------- |
-| Packet Type        | Control Type | Subtype | Section                    |
+| Packet Type | Control Type | Subtype | Section |
 | ------------------ | :----------: | :-----: | -------------------------- |
-| HANDSHAKE          |  0x0000      |   0x0   | {{ctrl-pkt-handshake}}     |
-| KEEPALIVE          |  0x0001      |   0x0   | {{ctrl-pkt-keepalive}}     |
-| ACK                |  0x0002      |   0x0   | {{ctrl-pkt-ack}}           |
-| NAK (Loss Report)  |  0x0003      |   0x0   | {{ctrl-pkt-nak}}           |
-| Congestion Warning |  0x0004      |   0x0   | {{ctrl-pkt-congestion}}    |
-| SHUTDOWN           |  0x0005      |   0x0   | {{ctrl-pkt-shutdown}}      |
-| ACKACK             |  0x0006      |   0x0   | {{ctrl-pkt-ackack}}        |
-| DROPREQ            |  0x0007      |   0x0   | {{ctrl-pkt-dropreq}}       |
-| PEERERROR          |  0x0008      |   0x0   | {{ctrl-pkt-peer-error}}    |
-| User-Defined Type  |  0x7FFF      |    -    | N/A                        |
+| HANDSHAKE | 0x0000 | 0x0 | {{ctrl-pkt-handshake}} |
+| KEEPALIVE | 0x0001 | 0x0 | {{ctrl-pkt-keepalive}} |
+| ACK | 0x0002 | 0x0 | {{ctrl-pkt-ack}} |
+| NAK (Loss Report) | 0x0003 | 0x0 | {{ctrl-pkt-nak}} |
+| Congestion Warning | 0x0004 | 0x0 | {{ctrl-pkt-congestion}} |
+| SHUTDOWN | 0x0005 | 0x0 | {{ctrl-pkt-shutdown}} |
+| ACKACK | 0x0006 | 0x0 | {{ctrl-pkt-ackack}} |
+| DROPREQ | 0x0007 | 0x0 | {{ctrl-pkt-dropreq}} |
+| PEERERROR | 0x0008 | 0x0 | {{ctrl-pkt-peer-error}} |
+| User-Defined Type | 0x7FFF | - | N/A |
 | ------------------ | ------------ | ------- | -------------------------- |
 {: #srt-ctrl-pkt-type-table title="SRT control packet types"}
 
@@ -478,7 +464,7 @@ The Type-specific Information field is unused in the case of the HS message.
 The Control Information Field (CIF) of a handshake control packet is shown
 in {{handshake-packet-structure}}.
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -512,42 +498,45 @@ in {{handshake-packet-structure}}.
 +                       Extension Contents                      +
 |                                                               |
 +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-~~~
+```
+
 {: #handshake-packet-structure title="Handshake packet structure"}
 
 HS Version: 32 bits.
 : The handshake version number. Currently used values are 4 and 5.
-  Values greater than 5 are reserved for future use.
+Values greater than 5 are reserved for future use.
 
 Encryption Field: 16 bits.
 : Block cipher family and key size. The values of this field are
-  described in {{handshake-encr-fld}}. The default value is 0 (no encryption advertised).
-  If neither peer advertises encryption, AES-128 is selected by default (see {{handshake-messages}}).
+described in {{handshake-encr-fld}}. The default value is 0 (no encryption advertised).
+If neither peer advertises encryption, AES-128 is selected by default (see {{handshake-messages}}).
 
- | Value | Cipher Family and Key Size   |
- | ----- | :--------------------------: |
- |     0 | No Encryption Advertised     |
- |     2 | AES-128 *                    |
- |     3 | AES-192                      |
- |     4 | AES-256                      |
+| Value | Cipher Family and Key Size |
+| ----- | :------------------------: |
+| 0     |  No Encryption Advertised  |
+| 2     |         AES-128 \*         |
+| 3     |          AES-192           |
+| 4     |          AES-256           |
+
 {: #handshake-encr-fld title="Handshake Encryption Field values"}
 
 Extension Field: 16 bits.
 : This field is message specific extension related to Handshake Type field.
-  The value MUST be set to 0 except for the following cases.
+The value MUST be set to 0 except for the following cases.
 
-  (1) If the handshake control packet is the INDUCTION message, this field is
-  sent back by the Listener.
-  (2) In the case of a CONCLUSION message, this field value should contain a combination
-  of Extension Type values.
+(1) If the handshake control packet is the INDUCTION message, this field is
+sent back by the Listener.
+(2) In the case of a CONCLUSION message, this field value should contain a combination
+of Extension Type values.
 
-  For more details, see {{caller-listener-handshake}}.
+For more details, see {{caller-listener-handshake}}.
 
-| Bitmask    | Flag |
-| ---------- | :---------------: |
-| 0x00000001 | HSREQ             |
-| 0x00000002 | KMREQ             |
-| 0x00000004 | CONFIG            |
+| Bitmask    |  Flag  |
+| ---------- | :----: |
+| 0x00000001 | HSREQ  |
+| 0x00000002 | KMREQ  |
+| 0x00000004 | CONFIG |
+
 {: #hs-ext-flags title="Handshake Extension Flags"}
 
 Initial Packet Sequence Number: 31 bits.
@@ -555,24 +544,25 @@ Initial Packet Sequence Number: 31 bits.
 
 Maximum Transmission Unit Size: 32 bits.
 : Maximum Transmission Unit (MTU) size, in bytes. This value is typically set to 1500 bytes,
-  which is the default MTU size for Ethernet, but can be less.
+which is the default MTU size for Ethernet, but can be less.
 
 Maximum Flow Window Size: 32 bits.
 : The value of this field is the maximum number of data packets allowed to be "in flight"
-  (i.e. the number of sent packets for which an ACK control packet has not yet been received).
+(i.e. the number of sent packets for which an ACK control packet has not yet been received).
 
 Handshake Type: 32 bits.
 : This field indicates the handshake packet type.
-  The possible values are described in {{handshake-type}}.
-  For more details refer to {{handshake-messages}}.
+The possible values are described in {{handshake-type}}.
+For more details refer to {{handshake-messages}}.
 
-| Value      | Handshake Type               |
-| ---------- | :--------------------------: |
-| 0xFFFFFFFD | DONE                         |
-| 0xFFFFFFFE | AGREEMENT                    |
-| 0xFFFFFFFF | CONCLUSION                   |
-| 0x00000000 | WAVEAHAND                    |
-| 0x00000001 | INDUCTION                    |
+| Value      | Handshake Type |
+| ---------- | :------------: |
+| 0xFFFFFFFD |      DONE      |
+| 0xFFFFFFFE |   AGREEMENT    |
+| 0xFFFFFFFF |   CONCLUSION   |
+| 0x00000000 |   WAVEAHAND    |
+| 0x00000001 |   INDUCTION    |
+
 {: #handshake-type title="Handshake Type"}
 
 SRT Socket ID: 32 bits.
@@ -580,26 +570,27 @@ SRT Socket ID: 32 bits.
 
 SYN Cookie: 32 bits.
 : Randomized value for processing a handshake. The value of this field is specified
-  by the handshake message type. See {{handshake-messages}}.
+by the handshake message type. See {{handshake-messages}}.
 
 Peer IP Address: 128 bits.
 : IPv4 or IPv6 address of the packet's sender. The value consists of four 32-bit fields.
-  In the case of IPv4 addresses, fields 2, 3 and 4 are filled with zeroes.
+In the case of IPv4 addresses, fields 2, 3 and 4 are filled with zeroes.
 
 Extension Type: 16 bits.
 : The value of this field is used to process an integrated handshake.
-  Each extension can have a pair of request and response types.
+Each extension can have a pair of request and response types.
 
-| Value   | Extension Type       | HS Extension Flag | Section                     |
-| ------- | :------------------: | :---------------: | --------------------------- |
-|       1 | SRT_CMD_HSREQ        | HSREQ             | {{handshake-extension-msg}} |
-|       2 | SRT_CMD_HSRSP        | HSREQ             | {{handshake-extension-msg}} |
-|       3 | SRT_CMD_KMREQ        | KMREQ             | {{sec-hsext-km}}            |
-|       4 | SRT_CMD_KMRSP        | KMREQ             | {{sec-hsext-km}}            |
-|       5 | SRT_CMD_SID          | CONFIG            | {{sec-hsext-streamid}}      |
-|       6 | SRT_CMD_CONGESTION   | CONFIG            | {{sec-hsext-streamid}}      |
-|       7 | SRT_CMD_FILTER       | CONFIG            |                             |
-|       8 | SRT_CMD_GROUP        | CONFIG            | {{sec-hsext-group}}         |
+| Value |   Extension Type   | HS Extension Flag | Section                     |
+| ----- | :----------------: | :---------------: | --------------------------- |
+| 1     |   SRT_CMD_HSREQ    |       HSREQ       | {{handshake-extension-msg}} |
+| 2     |   SRT_CMD_HSRSP    |       HSREQ       | {{handshake-extension-msg}} |
+| 3     |   SRT_CMD_KMREQ    |       KMREQ       | {{sec-hsext-km}}            |
+| 4     |   SRT_CMD_KMRSP    |       KMREQ       | {{sec-hsext-km}}            |
+| 5     |    SRT_CMD_SID     |      CONFIG       | {{sec-hsext-streamid}}      |
+| 6     | SRT_CMD_CONGESTION |      CONFIG       | {{sec-hsext-streamid}}      |
+| 7     |   SRT_CMD_FILTER   |      CONFIG       |                             |
+| 8     |   SRT_CMD_GROUP    |      CONFIG       | {{sec-hsext-group}}         |
+
 {: #handshake-ext-type title="Handshake Extension Type values"}
 
 Extension Length: 16 bits.
@@ -616,7 +607,7 @@ and 2 for a Handshake Extension response (SRT_CMD_HSRSP in {{handshake-ext-type}
 
 The Extension Contents field of a Handshake Extension Message is structured as follows:
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -626,11 +617,12 @@ The Extension Contents field of a Handshake Extension Message is structured as f
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |      Receiver TSBPD Delay     |       Sender TSBPD Delay      |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #handshake-extension-msg-structure title="Handshake Extension Message structure"}
 
 SRT Version: 32 bits.
-: SRT library version MUST be formed as major * 0x10000 + minor * 0x100 + patch.
+: SRT library version MUST be formed as major _ 0x10000 + minor _ 0x100 + patch.
 
 SRT Flags: 32 bits.
 : SRT configuration flags (see {{hs-ext-msg-flags}}).
@@ -643,16 +635,17 @@ Sender TSBPD Delay: 16 bits.
 
 ##### Handshake Extension Message Flags {#hs-ext-msg-flags}
 
-| Bitmask    | Flag              |
-| ---------- | :---------------: |
-| 0x00000001 | TSBPDSND          |
-| 0x00000002 | TSBPDRCV          |
-| 0x00000004 | CRYPT             |
-| 0x00000008 | TLPKTDROP         |
-| 0x00000010 | PERIODICNAK       |
-| 0x00000020 | REXMITFLG         |
-| 0x00000040 | STREAM            |
-| 0x00000080 | PACKET_FILTER     |
+| Bitmask    |     Flag      |
+| ---------- | :-----------: |
+| 0x00000001 |   TSBPDSND    |
+| 0x00000002 |   TSBPDRCV    |
+| 0x00000004 |     CRYPT     |
+| 0x00000008 |   TLPKTDROP   |
+| 0x00000010 |  PERIODICNAK  |
+| 0x00000020 |   REXMITFLG   |
+| 0x00000040 |    STREAM     |
+| 0x00000080 | PACKET_FILTER |
+
 {: #hs-ext-msg-flags-tbl title="Handshake Extension Message Flags"}
 
 - TSBPDSND flag defines if the TSBPD mechanism ({{tsbpd}}) will be used for sending.
@@ -660,19 +653,19 @@ Sender TSBPD Delay: 16 bits.
 - TSBPDRCV flag defines if the TSBPD mechanism ({{tsbpd}}) will be used for receiving.
 
 - CRYPT flag MUST be set. It is a legacy flag that indicates the party understands
-KK field of the SRT Packet ({{srtdatapacket}}).
+  KK field of the SRT Packet ({{srtdatapacket}}).
 
 - TLPKTDROP flag should be set if too-late packet drop mechanism will be used during transmission.
-See {{too-late-packet-drop}}.
+  See {{too-late-packet-drop}}.
 
 - PERIODICNAK flag set indicates the peer will send periodic NAK packets. See {{packet-naks}}.
 
 - REXMITFLG flag MUST be set. It is a legacy flag that indicates the peer understands the R field
-of the SRT DATA Packet ({{srtdatapacket}}).
+  of the SRT DATA Packet ({{srtdatapacket}}).
 
 - STREAM flag identifies the transmission mode ({{data-transmission-modes}}) to be used in the connection.
-If the flag is set, the buffer mode ({{transmission-mode-buffer}}) is used.
-Otherwise, the message mode ({{transmission-mode-msg}}) is used.
+  If the flag is set, the buffer mode ({{transmission-mode-buffer}}) is used.
+  Otherwise, the message mode ({{transmission-mode-msg}}) is used.
 
 - PACKET_FILTER flag indicates if the peer supports packet filter.
 
@@ -692,13 +685,14 @@ The KM message is placed in the Extension Contents. See {{sec-ctrlpkt-km}} for t
 In case of SRT_CMD_KMRSP the Extension Length value can be equal to 1 (meaning 4 bytes).
 It is an indication of encryption failure. In this case the Extension Content has a different format, {{fig-hsext-kmerror}}.
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |                           KM State                            |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #fig-hsext-kmerror title="KM Response Error"}
 
 KM State: 32 bits.
@@ -711,8 +705,6 @@ NOTE: In the descriptions below, "peer" refers to the remote SRT side sending th
 - 4: bad secret (the peer has the wrong key and can't decrypt the incoming payload),
 - 5: bad crypto mode (the peer expects to use a different cryptographic mode). Since protocol v1.6.
 
-
-
 #### Stream ID Extension Message {#sec-hsext-streamid}
 
 The Stream ID handshake extension message can be used to identify the stream content.
@@ -723,7 +715,7 @@ The Stream ID handshake extension message has SRT_CMD_SID extension type (see {{
 The extension contents are a sequence of UTF-8 characters. The maximum allowed size of the
 StreamID extension is 512 bytes.
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -732,7 +724,8 @@ StreamID extension is 512 bytes.
                                ...
 |                                                               |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #fig-hsext-streamid title="Stream ID Extension Message"}
 
 The Extension Contents field holds a sequence of UTF-8 characters (see {{fig-hsext-streamid}}).
@@ -747,7 +740,7 @@ The content is stored as 32-bit little endian words.
 The Group Membership handshake extension is reserved for the future and is
 going to be used to allow multipath SRT connections.
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -755,16 +748,17 @@ going to be used to allow multipath SRT connections.
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |     Type    |     Flags     |             Weight              |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #fig-hsext-group title="Group Membership Extension Message"}
 
 GroupID: 32 bits.
 : The identifier of a group whose members include the sender socket that is making a connection.
-  The target socket that is interpreting GroupID SHOULD belong to the corresponding group on the target side.
-  If such a group does not exist, the target socket MAY create it.
+The target socket that is interpreting GroupID SHOULD belong to the corresponding group on the target side.
+If such a group does not exist, the target socket MAY create it.
 
 Type: 8 bits.
-: Group type, as per SRT_GTYPE_ enumeration:
+: Group type, as per SRT*GTYPE* enumeration:
 
 - 0: undefined group type,
 - 1: broadcast group type,
@@ -782,12 +776,13 @@ Weight: 16 bits.
 - Defines the link priority for main/backup group type,
 - Not yet defined for any other cases (reserved for future use).
 
-~~~
+```
  0 1 2 3 4 5 6 7
 +-+-+-+-+-+-+-+
 |   (zero)  |M|
 +-+-+-+-+-+-+-+
-~~~
+```
+
 {: #fig-hsext-group-flags title="Group Membership Extension Flags"}
 
 M: 1 bit.
@@ -811,7 +806,7 @@ The KM Refresh mechanism is described in {{sec-crypt-km-refresh}}.
 
 The structure of the Key Material message is illustrated in {{fig-km-msg}}.
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -829,7 +824,8 @@ The structure of the Key Material message is illustrated in {{fig-km-msg}}.
 +                          Wrapped Key                          +
 |                                                               |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~~
+```
+
 {: #fig-km-msg title="Key Material Message structure"}
 
 S: 1 bit, value = {0}.
@@ -838,19 +834,19 @@ S: 1 bit, value = {0}.
 KM Version (V): 3 bits, value = {1}.
 : This is a fixed-width field that indicates the KM message version:
 
-  - 1: Initial KM message format version.
+- 1: Initial KM message format version.
 
 Packet Type (PT): 4 bits, value = {2}.
 : This is a fixed-width field that indicates the Packet Type:
 
-  - 0: Reserved
-  - 1: Media Stream Message (MSmsg)
-  - 2: Keying Material Message (KMmsg)
-  - 7: Reserved to discriminate MPEG-TS packet (0x47=sync byte).
+- 0: Reserved
+- 1: Media Stream Message (MSmsg)
+- 2: Keying Material Message (KMmsg)
+- 7: Reserved to discriminate MPEG-TS packet (0x47=sync byte).
 
 Sign: 16 bits, value = {0x2029}.
 : This is a fixed-width field that contains the signature ‘HAI‘ encoded as a
-  PnP Vendor ID {{PNPID}} (in big-endian order).
+PnP Vendor ID {{PNPID}} (in big-endian order).
 
 Resv1: 6 bits, value = {0}.
 : This is a fixed-width field reserved for flag extension or other usage.
@@ -858,46 +854,46 @@ Resv1: 6 bits, value = {0}.
 Key-based Encryption (KK): 2 bits.
 : This is a fixed-width field that indicates which SEKs (odd and/or even) are provided in the extension:
 
-  - 00b: No SEK is provided (invalid extension format);
-  - 01b: Even key is provided;
-  - 10b: Odd key is provided;
-  - 11b: Both even and odd keys are provided.
+- 00b: No SEK is provided (invalid extension format);
+- 01b: Even key is provided;
+- 10b: Odd key is provided;
+- 11b: Both even and odd keys are provided.
 
 Key Encryption Key Index (KEKI): 32 bits, value = {0}.
 : This is a fixed-width field for specifying the KEK index (big-endian order)
-  was used to wrap (and optionally authenticate) the SEK(s).
-  The value 0 is used to indicate the default key of the current stream.
-  Other values are reserved for the possible use of a key management system in the future
-  to retrieve a cryptographic context.
+was used to wrap (and optionally authenticate) the SEK(s).
+The value 0 is used to indicate the default key of the current stream.
+Other values are reserved for the possible use of a key management system in the future
+to retrieve a cryptographic context.
 
-  - 0: Default stream associated key (stream/system default)
-  - 1..255: Reserved for manually indexed keys.
+- 0: Default stream associated key (stream/system default)
+- 1..255: Reserved for manually indexed keys.
 
 Cipher: 8 bits, value = {0..2}.
 : This is a fixed-width field for specifying encryption cipher and mode:
 
-  - 0: None or KEKI indexed crypto context;
-  - 1: AES-ECB (Reserved, not supported);
-  - 2: AES-CTR {{SP800-38A}};
-  - 3: AES-CBC (Reserved, not supported);
-  - 4: AES-GCM (Galois Counter Mode), starting from v1.6.0.
+- 0: None or KEKI indexed crypto context;
+- 1: AES-ECB (Reserved, not supported);
+- 2: AES-CTR {{SP800-38A}};
+- 3: AES-CBC (Reserved, not supported);
+- 4: AES-GCM (Galois Counter Mode), starting from v1.6.0.
 
 If AES-GCM is set as the cipher, AES-GCM MUST also be set as the message authentication code algorithm (the Auth field).
 
 Authentication (Auth): 8 bits, value = {0}.
 : This is a fixed-width field for specifying a message authentication code (MAC) algorithm:
 
-  - 0: None or KEKI indexed crypto context;
-  - 1: AES-GCM, starting from v1.6.0.
+- 0: None or KEKI indexed crypto context;
+- 1: AES-GCM, starting from v1.6.0.
 
 If AES-GCM is selected as the MAC algorithm, it MUST also be selected as the cipher.
 
 Stream Encapsulation (SE): 8 bits, value = {2}.
 : This is a fixed-width field for describing the stream encapsulation:
 
-  - 0: Unspecified or KEKI indexed crypto context
-  - 1: MPEG-TS/UDP
-  - 2: MPEG-TS/SRT.
+- 0: Unspecified or KEKI indexed crypto context
+- 1: MPEG-TS/UDP
+- 2: MPEG-TS/SRT.
 
 Resv2: 8 bits, value = {0}.
 : This is a fixed-width field reserved for future use.
@@ -907,21 +903,21 @@ Resv3: 16 bits, value = {0}.
 
 SLen/4: 8 bits, value = {4}.
 : This is a fixed-width field for specifying salt length SLen in bytes divided by 4.
-  Can be zero if no salt/IV present. The only valid length of salt defined is 128 bits.
+Can be zero if no salt/IV present. The only valid length of salt defined is 128 bits.
 
 KLen/4: 8 bits, value = {4,6,8}.
 : This is a fixed-width field for specifying SEK length in bytes divided by 4.
-  Size of one key even if two keys present. MUST match the key size specified in the Encryption Field
-  of the handshake packet {{handshake-encr-fld}}.
+Size of one key even if two keys present. MUST match the key size specified in the Encryption Field
+of the handshake packet {{handshake-encr-fld}}.
 
-Salt (SLen): SLen * 8 bits, value = { }.
+Salt (SLen): SLen \* 8 bits, value = { }.
 : This is a variable-width field that complements the keying material by specifying a salt key.
 
-Wrap: (64 + n * KLen * 8) bits, value = { }.
+Wrap: (64 + n _ KLen _ 8) bits, value = { }.
 : This is a variable-width field for specifying Wrapped key(s), where n = (KK + 1)/2 and
-  the size of the wrap field is ((n * KLen) + 8) bytes.
+the size of the wrap field is ((n \* KLen) + 8) bytes.
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -933,18 +929,19 @@ Wrap: (64 + n * KLen * 8) bits, value = { }.
 +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
 |                              oSEK                             |
 +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-~~~
+```
+
 {: #unwrapped-key-structure title="Unwrapped key structure"}
 
 ICV: 64 bits.
 : 64-bit Integrity Check Vector(AES key wrap integrity).
-  This field is used to detect if the keys were unwrapped properly.
-  If the KEK in hand is invalid, validation fails and unwrapped keys are discarded.
+This field is used to detect if the keys were unwrapped properly.
+If the KEK in hand is invalid, validation fails and unwrapped keys are discarded.
 
 xSEK: variable width.
 : This field identifies an odd or even SEK. If only one key is present, the bit set in the KK field tells which SEK is provided.
-  If both keys are present, then this field is eSEK (even key) and it is followed by odd key oSEK.
-  The length of this field is calculated as KLen * 8.
+If both keys are present, then this field is eSEK (even key) and it is followed by odd key oSEK.
+The length of this field is calculated as KLen \* 8.
 
 oSEK: variable width.
 : This field with the odd key is present only when the message carries the two SEKs (identified by he KK field).
@@ -959,7 +956,7 @@ The default timeout for a keep-alive packet to be sent is 1 second.
 
 An SRT keep-alive packet is formatted as follows:
 
-~~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+- SRT Header +-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -971,7 +968,8 @@ An SRT keep-alive packet is formatted as follows:
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |                   Destination SRT Socket ID                   |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~~
+```
+
 {: #keepalive-structure title="Keep-Alive control packet"}
 
 Packet Type: 1 bit, value = 1.
@@ -1006,7 +1004,7 @@ ACK packets may also carry some additional information from the receiver like
 the estimates of RTT, RTT variance, link capacity, receiving speed, etc. The CIF portion of the ACK control packet is
 expanded as follows:
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+- SRT Header +-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -1032,7 +1030,8 @@ expanded as follows:
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |                         Receiving Rate                        |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #ack-control-packet title="ACK control packet"}
 
 Packet Type: 1 bit, value = 1.
@@ -1055,7 +1054,7 @@ Destination SRT Socket ID: 32 bits.
 
 Last Acknowledged Packet Sequence Number: 31 bits.
 : This field contains the sequence number of the last data packet being acknowledged plus one.
-  In other words, if it the sequence number of the first unacknowledged packet.
+In other words, if it the sequence number of the first unacknowledged packet.
 
 RTT: 32 bits.
 : RTT value, in microseconds, estimated by the receiver based on the previous ACK/ACKACK
@@ -1100,7 +1099,7 @@ packet that contains a list of sequence numbers for those lost packets.
 
 An SRT NAK packet is formatted as follows:
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+- SRT Header +-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -1120,7 +1119,8 @@ An SRT NAK packet is formatted as follows:
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |0|                 Lost packet sequence number                 |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #nak-control-packet title="NAK control packet"}
 
 Packet Type: 1 bit, value = 1.
@@ -1155,8 +1155,7 @@ minimum inter-packet sending interval by a discrete value (posited to be 12.5%).
 
 Note that the conditions for a receiver to issue this type of packet are not yet defined.
 
-
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+- SRT Header +-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -1168,7 +1167,8 @@ Note that the conditions for a receiver to issue this type of packet are not yet
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |                   Destination SRT Socket ID                   |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #congestion-warning-control-packet title="Congestion Warning control packet"}
 
 Packet Type: 1 bit, value = 1.
@@ -1192,7 +1192,7 @@ Shutdown control packets are used to initiate the closing of an SRT connection.
 
 An SRT shutdown control packet is formatted as follows:
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+- SRT Header +-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -1204,7 +1204,8 @@ An SRT shutdown control packet is formatted as follows:
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |                   Destination SRT Socket ID                   |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #shutdown-control-packet title="Shutdown control packet"}
 
 Packet Type: 1 bit, value = 1.
@@ -1231,7 +1232,7 @@ in the calculation of the round-trip time by the SRT receiver.
 
 An SRT ACKACK control packet is formatted as follows:
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+- SRT Header +-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -1243,7 +1244,8 @@ An SRT ACKACK control packet is formatted as follows:
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |                   Destination SRT Socket ID                   |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #ackack-control-packet title="ACKACK control packet"}
 
 Packet Type: 1 bit, value = 1.
@@ -1254,7 +1256,7 @@ Control Type: 15 bits, value = ACKACK{0x0006}.
 
 Acknowledgement Number.
 : This field contains the Acknowledgement Number of the full ACK packet
-  the reception of which is being acknowledged by this ACKACK packet.
+the reception of which is being acknowledged by this ACKACK packet.
 
 Timestamp: 32 bits.
 : See {{packet-structure}}.
@@ -1283,7 +1285,7 @@ which form the whole message. If the sender does not already have in its buffer 
 which retransmission was requested, then it is unable to restore the message number. In this case the Message
 Number field must be set to zero, and the receiver should drop packets in the provided packet sequence number range.
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+- SRT Header +-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -1299,7 +1301,8 @@ Number field must be set to zero, and the receiver should drop packets in the pr
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |0|                Last Packet Sequence Number                  |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #dropreq-control-packet title="Drop Request control packet"}
 
 Packet Type: 1 bit, value = 1.
@@ -1310,7 +1313,7 @@ Control Type: 15 bits, value = 7.
 
 Message Number: 32 bits.
 : The identifying number of the message requested to be dropped.
-  See the Message Number field in {{data-pkt}}.
+See the Message Number field in {{data-pkt}}.
 
 Timestamp: 32 bits.
 : See {{packet-structure}}.
@@ -1334,7 +1337,7 @@ The sender receiving this type of control packet must unblock any sending operat
 
 **NOTE**: This control packet is only used if the File Transfer Congestion Control ({{fileCC}}) is enabled.
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+- SRT Header +-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -1346,7 +1349,8 @@ The sender receiving this type of control packet must unblock any sending operat
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |                   Destination SRT Socket ID                   |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #peer-error-control-packet title="Peer Error control packet"}
 
 Packet Type: 1 bit, value = 1.
@@ -1404,7 +1408,7 @@ in Message mode, characterized as follows:
 - Every packet has its own Packet Sequence Number.
 - One or several consecutive SRT data packets can form a message.
 - All the packets belonging to the same message have a similar message number set
-      in the Message Number field.
+  in the Message Number field.
 
 The first packet of a message has the first bit of the Packet Position Flags ({{data-pkt}})
 set to 1. The last packet of the message has the second bit of the Packet Position Flags
@@ -1504,26 +1508,27 @@ When a connection process has failed before either party can send the CONCLUSION
 the Handshake Type field will contain the appropriate error value for the rejected
 connection. See the list of error codes in {{hs-rej-reason}}.
 
-| Code | Error                | Description                             |
-| ---- | -------------------- | --------------------------------------- |
-| 1000 | SRT_REJ_UNKNOWN      | Unknown reason                          |
-| 1001 | SRT_REJ_SYSTEM       | System function error                   |
-| 1002 | SRT_REJ_PEER         | Rejected by peer                        |
-| 1003 | SRT_REJ_RESOURCE     | Resource allocation problem             |
-| 1004 | SRT_REJ_ROGUE        | incorrect data in handshake             |
-| 1005 | SRT_REJ_BACKLOG      | listener's backlog exceeded             |
-| 1006 | SRT_REJ_IPE          | internal program error                  |
-| 1007 | SRT_REJ_CLOSE        | socket is closing                       |
-| 1008 | SRT_REJ_VERSION      | peer is older version than agent's min  |
-| 1009 | SRT_REJ_RDVCOOKIE    | rendezvous cookie collision             |
-| 1010 | SRT_REJ_BADSECRET    | wrong password                          |
-| 1011 | SRT_REJ_UNSECURE     | password required or unexpected         |
-| 1012 | SRT_REJ_MESSAGEAPI   | Stream flag collision                   |
-| 1013 | SRT_REJ_CONGESTION   | incompatible congestion-controller type |
-| 1014 | SRT_REJ_FILTER       | incompatible packet filter              |
-| 1015 | SRT_REJ_GROUP        | incompatible group                      |
-| 1016 | SRT_REJ_TIMEOUT      | timeout expired                         |
-| 1017 | SRT_REJ_CRYPTO       | incompatible cryptographic mode         |
+| Code | Error              | Description                             |
+| ---- | ------------------ | --------------------------------------- |
+| 1000 | SRT_REJ_UNKNOWN    | Unknown reason                          |
+| 1001 | SRT_REJ_SYSTEM     | System function error                   |
+| 1002 | SRT_REJ_PEER       | Rejected by peer                        |
+| 1003 | SRT_REJ_RESOURCE   | Resource allocation problem             |
+| 1004 | SRT_REJ_ROGUE      | incorrect data in handshake             |
+| 1005 | SRT_REJ_BACKLOG    | listener's backlog exceeded             |
+| 1006 | SRT_REJ_IPE        | internal program error                  |
+| 1007 | SRT_REJ_CLOSE      | socket is closing                       |
+| 1008 | SRT_REJ_VERSION    | peer is older version than agent's min  |
+| 1009 | SRT_REJ_RDVCOOKIE  | rendezvous cookie collision             |
+| 1010 | SRT_REJ_BADSECRET  | wrong password                          |
+| 1011 | SRT_REJ_UNSECURE   | password required or unexpected         |
+| 1012 | SRT_REJ_MESSAGEAPI | Stream flag collision                   |
+| 1013 | SRT_REJ_CONGESTION | incompatible congestion-controller type |
+| 1014 | SRT_REJ_FILTER     | incompatible packet filter              |
+| 1015 | SRT_REJ_GROUP      | incompatible group                      |
+| 1016 | SRT_REJ_TIMEOUT    | timeout expired                         |
+| 1017 | SRT_REJ_CRYPTO     | incompatible cryptographic mode         |
+
 {: #hs-rej-reason title="Handshake Rejection Reason codes"}
 
 The specification of the cipher family and block size is decided by the data Sender.
@@ -1612,7 +1617,7 @@ SRT listener, then is it RECOMMENDED that it accepts the value advertised in the
 
 An alternative behavior MAY be for a caller to take the longer key length in such cases.
 
-TODO: Receiver TSBPD Delay,  Sender TSBPD Delay.
+TODO: Receiver TSBPD Delay, Sender TSBPD Delay.
 
 The SRT Caller forms a Conclusion Request. The following values of a Handshake packet MUST be set by the compliant Caller:
 
@@ -1754,7 +1759,7 @@ If encryption is on, the Initiator (Bob) will use either his
 own cipher family and block size or the one received from Alice (if she has advertised
 those values).
 
-The Responder responds  with a Conclusion or a WAVEAHAND handshake without extensions until it receives the Conclusion Request from the peer:
+The Responder responds with a Conclusion or a WAVEAHAND handshake without extensions until it receives the Conclusion Request from the peer:
 
 - HS Version: 5
 - Extension field: 0.
@@ -1768,18 +1773,19 @@ Repeat conclusion response but not more often that every 250 ms.
 #### Initiated
 
 Alice receives Bob's CONCLUSION message. While at this point she also
-   performs the "cookie contest" operation, the outcome will be the same. She switches to the
-   "fine" state, and sends:
-   - Version: 5
-   - Appropriate extension flags and encryption flags
-   - Handshake Type: CONCLUSION
+performs the "cookie contest" operation, the outcome will be the same. She switches to the
+"fine" state, and sends:
 
-   Both parties always send extension flags at this point, which will
-   contain HSREQ if the message comes from an Initiator, or
-   HSRSP if it comes from a Responder. If the Initiator has received a
-   previous message from the Responder containing an advertised cipher family and block size in the
-   encryption flags field, it will be used as the key length
-   for key generation sent next in the KMREQ extension.
+- Version: 5
+- Appropriate extension flags and encryption flags
+- Handshake Type: CONCLUSION
+
+Both parties always send extension flags at this point, which will
+contain HSREQ if the message comes from an Initiator, or
+HSRSP if it comes from a Responder. If the Initiator has received a
+previous message from the Responder containing an advertised cipher family and block size in the
+encryption flags field, it will be used as the key length
+for key generation sent next in the KMREQ extension.
 
 #### Serial Handshake Flow
 
@@ -1796,6 +1802,7 @@ and following parties (Alice and Bob, respectively):
 
 1. Initially, both parties are in the waving state. Alice sends a handshake
    message to Bob:
+
    - Version: 5
    - Type: Extension field: 0, Encryption field: advertised "PBKEYLEN"
    - Handshake Type: WAVEAHAND
@@ -1828,6 +1835,7 @@ and following parties (Alice and Bob, respectively):
 3. Alice receives Bob's CONCLUSION message. While at this point she also
    performs the "cookie contest", the outcome will be the same. She switches to the
    "fine" state, and sends:
+
    - Version: 5
    - Appropriate extension flags and encryption flags
    - Handshake Type: CONCLUSION.
@@ -1841,7 +1849,9 @@ and following parties (Alice and Bob, respectively):
 
 4. Bob receives Alice's CONCLUSION message, and then does one of the
    following (depending on Bob's role):
+
    - If Bob is the Initiator (Alice's message contains HSRSP), he:
+
      - switches to the "connected" state, and
      - sends Alice a message with Handshake Type AGREEMENT, but containing
        no SRT extensions (Extension Flags field should be 0).
@@ -1855,10 +1865,11 @@ and following parties (Alice and Bob, respectively):
 
 5. Alice receives the above message, enters into the "connected" state, and
    then does one of the following (depending on Alice's role):
-    - If Alice is the Initiator (received CONCLUSION with HSRSP),
-      she sends Bob a message with Handshake Type = AGREEMENT.
-    - If Alice is the Responder, the received message has Handshake Type AGREEMENT
-      and in response she does nothing.
+
+   - If Alice is the Initiator (received CONCLUSION with HSRSP),
+     she sends Bob a message with Handshake Type = AGREEMENT.
+   - If Alice is the Responder, the received message has Handshake Type AGREEMENT
+     and in response she does nothing.
 
 6. At this point, if Bob was an Initiator, he is connected already. If he was a
    Responder, he should receive the above AGREEMENT message, after which he
@@ -1892,6 +1903,7 @@ Here is how the parallel handshake flow works, based on roles and states:
 (1) Initiator
 
 1. Waving
+
    - Receives WAVEAHAND message,
    - Switches to Attention,
    - Sends CONCLUSION + HSREQ.
@@ -1918,11 +1930,13 @@ Here is how the parallel handshake flow works, based on roles and states:
 (2) Responder
 
 1. Waving
+
    - Receives WAVEAHAND message,
    - Switches to Attention,
    - Sends CONCLUSION message (with no extensions).
 
 2. Attention
+
    - Receives CONCLUSION message with HSREQ.
      This message might contain no extensions, in which case the party
      SHALL simply send the empty CONCLUSION message, as before, and remain
@@ -2038,7 +2052,7 @@ in the stream.
 {{fig-latency-points}} illustrates the key latency points during the packet transmission
 with the TSBPD feature enabled.
 
-~~~
+```
               |  Sending  |              |                   |
               |   Delay   |    ~RTT/2    |    SRT Latency    |
               |<--------->|<------------>|<----------------->|
@@ -2053,7 +2067,8 @@ State         |           |              |                   |
               |           |              |                   |
               ----------------------------------------------------->
                                                                 Time
-~~~
+```
+
 {: #fig-latency-points title="Key latency points during the packet transmission"}
 
 The main packet states shown in {{fig-latency-points}} are the following:
@@ -2080,9 +2095,9 @@ Packet delivery time is the moment, estimated by the receiver, when a packet sho
 to the upstream application. The calculation of packet delivery time (PktTsbpdTime) is performed
 upon receiving a data packet according to the following formula:
 
-~~~
+```
 PktTsbpdTime = TsbpdTimeBase + PKT_TIMESTAMP + TsbpdDelay + Drift
-~~~
+```
 
 where
 
@@ -2107,9 +2122,9 @@ making it impossible to retransmit packets endlessly. This is important for the 
 The initial value of TSBPD time base (TsbpdTimeBase) is calculated at the moment of
 the second handshake request is received as follows:
 
-~~~
+```
 TsbpdTimeBase = T_NOW - HSREQ_TIMESTAMP
-~~~
+```
 
 where T_NOW is the current time according to the receiver clock;
 HSREQ_TIMESTAMP is the handshake packet timestamp, in microseconds.
@@ -2128,12 +2143,11 @@ During the transmission process, the value of TSBPD time base may be adjusted in
    of a packet and ends once the packet with timestamp within (30, 60) seconds interval
    is delivered (read from the buffer). The updated value of TsbpdTimeBase will be recalculated as follows:
 
-   ~~~
+   ```
    TsbpdTimeBase = TsbpdTimeBase + MAX_TIMESTAMP + 1
-   ~~~
+   ```
 
 2. By drift tracer. See {{drift-management}} for details.
-
 
 ## Too-Late Packet Drop {#too-late-packet-drop}
 
@@ -2299,7 +2313,7 @@ milliseconds (the ACK period or synchronization time interval SYN). For high bit
 for a sequence of packets. In a 10 milliseconds interval, there are often so many packets being sent and
 received that the ACK position on the sender does not advance quickly enough. To mitigate this,
 after 64 packets (even if the ACK period has not fully elapsed) the receiver sends a light ACK.
-A light ACK is a shorter ACK (SRT header  and one 32-bit field). It does not trigger an ACKACK.
+A light ACK is a shorter ACK (SRT header and one 32-bit field). It does not trigger an ACKACK.
 
 When a receiver encounters the situation where the next packet to be played was not
 successfully received from the sender, it will "skip" this packet (see {{too-late-packet-drop}})
@@ -2346,7 +2360,7 @@ The NAK packet in that case will have all the packets that the receiver consider
 at the time of sending the Periodic NAK report.
 
 SRT Periodic NAK reports are sent with a period of
-(RTT + 4 * RTTVar) / 2 (so called NAKInterval), with a 20 milliseconds
+(RTT + 4 \* RTTVar) / 2 (so called NAKInterval), with a 20 milliseconds
 floor, where RTT and RTTVar are defined in {{rtt}}. A NAK control
 packet contains a compressed list of the lost packets. Therefore, only
 lost packets are retransmitted. By using NAKInterval for the NAK
@@ -2390,15 +2404,15 @@ time and the ACK departure time. In the following formula,
 RTT is the current value that the receiver maintains and rtt is the
 recent value that was just calculated from an ACK/ACKACK pair:
 
-~~~
+```
 RTT = 7/8 * RTT + 1/8 * rtt
-~~~
+```
 
 RTT variance (RTTVar) is obtained as follows:
 
-~~~
+```
 RTTVar = 3/4 * RTTVar + 1/4 * abs(RTT - rtt)
-~~~
+```
 
 where abs() means an absolute value.
 
@@ -2498,9 +2512,9 @@ There are several ways of configuring maximum bandwidth (MAX_BW):
 
    In this mode, SRT calculates the maximum bandwidth as follows:
 
-   ~~~
+   ```
    MAX_BW = INPUT_BW * (1 + OVERHEAD /100)
-   ~~~
+   ```
 
    Note that INPUTBW_SET mode reduces to the MAXBW_SET mode and the same restrictions apply.
 
@@ -2510,9 +2524,9 @@ There are several ways of configuring maximum bandwidth (MAX_BW):
    In this mode, SRT adjusts the value of maximum bandwidth each time it
    gets the updated estimate of the input rate EST_INPUT_BW:
 
-   ~~~
+   ```
    MAX_BW = EST_INPUT_BW * (1 + OVERHEAD /100)
-   ~~~
+   ```
 
 Note that the units of MAX_BW, INPUT_BW, and EST_INPUT_BW are bytes per
 second. OVERHEAD is defined in %.
@@ -2545,13 +2559,13 @@ at the decoder, and possible drops by the receiver.
 The following table shows a summary of the bandwidth configuration modes
 and the variables that need to be set (v) or ignored (-):
 
-~~~
+```
 | Mode / Variable       | MAX_BW | INPUT_BW | OVERHEAD |
 | --------------------- | ------ | -------- | -------- |
 | MAXBW_SET             | v      | -        | -        |
 | INPUTBW_SET           | -      | v        | v        |
 | INPUTBW_ESTIMATED     | -      | -        | v        |
-~~~
+```
 
 ### SRT's Default LiveCC Algorithm {#default-liveCC}
 
@@ -2568,9 +2582,9 @@ and (3) a timeout event as described below.
 (1) On sending a data packet (either original or retransmitted), update
 the value of average packet payload size (AvgPayloadSize):
 
-~~~
+```
 AvgPayloadSize = 7/8 * AvgPayloadSize + 1/8 * PacketPayloadSize
-~~~
+```
 
 where PacketPayloadSize is the payload size of a sent data packet, in bytes;
 the initial value of AvgPayloadSize is equal to the maximum allowed packet
@@ -2584,9 +2598,9 @@ Step 1. Calculate SRT packet size (PktSize) as the sum of average payload size
 Step 2. Calculate the minimum allowed packet sending period (PKT_SND_PERIOD)
 as:
 
-~~~
+```
 PKT_SND_PERIOD = PktSize * 1000000 / MAX_BW
-~~~
+```
 
 where MAX_BW is the configured maximum bandwidth which limits the
 bandwidth usage by SRT, in bytes per second; PKT_SND_PERIOD is
@@ -2601,9 +2615,9 @@ timeout event is triggered. Since SRT only acknowledges every SYN time
 ({{packet-acks}}), the value of retransmission timeout is
 defined as follows:
 
-~~~
+```
 RTO = RTT + 4 * RTTVar + 2 * SYN
-~~~
+```
 
 where RTT is the round-trip time estimate, in microseconds, and
 RTTVar is the variance of RTT estimate, in microseconds, reported
@@ -2614,16 +2628,16 @@ section, smoothing means applying an exponentially weighted moving average (EWMA
 Continuous timeout should increase the RTO value. In SRT, a counter
 (RexmitCount) is used to track the number of continuous timeouts:
 
-~~~
+```
 RTO = RexmitCount * (RTT + 4 * RTTVar + 2 * SYN) + SYN
-~~~
+```
 
 On the receiver side, when a loss report is sent, the sending interval of
 periodic NAK reports ({{packet-naks}}) is updated as follows:
 
-~~~
+```
 NAKInterval = max((RTT + 4 * RTTVar) / 2, 20000)
-~~~
+```
 
 where RTT and RTTVar are receiver's estimates (see {{ctrl-pkt-ack}},
 {{rtt}}). The minimum value of NAKInterval is set to 20 milliseconds
@@ -2709,24 +2723,24 @@ in microseconds.
 
 Step 2. Update the value of LastRCTime to the current time:
 
-~~~
+```
 LastRCTime = currTime
-~~~
+```
 
 Step 3. The size of congestion window CWND_SIZE is increased by the
 difference in sequence numbers of the data packet being acknowledged
 ACK_SEQNO and the last acknowledged data packet LAST_ACK_SEQNO:
 
-~~~
+```
 CWND_SIZE += ACK_SEQNO - LAST_ACK_SEQNO
-~~~
+```
 
 Step 4. The sequence number of the last acknowledged data packet
 LAST_ACK_SEQNO is updated as follows:
 
-~~~
+```
 LAST_ACK_SEQNO = ACK_SEQNO
-~~~
+```
 
 Step 5. If the congestion window size CWND_SIZE calculated at Step 3 is greater
 than the upper threshold MAX_CWND_SIZE, slow start phase ends.
@@ -2742,28 +2756,28 @@ Set the packet sending period PKT_SND_PERIOD as follows:
 where
 
 - RECEIVING_RATE is the rate at which packets are being received,
-in packets per second, reported by the receiver and smoothed at
-the sender side (see {{ctrl-pkt-ack}}, {{bandwidth-estimation}});
+  in packets per second, reported by the receiver and smoothed at
+  the sender side (see {{ctrl-pkt-ack}}, {{bandwidth-estimation}});
 - RTT is the round-trip time estimate, in microseconds,
-reported by the receiver and smoothed at the sender side (see
-{{ctrl-pkt-ack}}, {{rtt}});
+  reported by the receiver and smoothed at the sender side (see
+  {{ctrl-pkt-ack}}, {{rtt}});
 - RC_INTERVAL is the fixed rate control interval, in microseconds.
-RC_INTERVAL of SRT is SYN, or synchronization time interval, which
-is 0.01 second. An ACK in SRT is sent every fixed time interval.
-The maximum and default ACK time interval is SYN.
-See {{packet-acks}} for details.
+  RC_INTERVAL of SRT is SYN, or synchronization time interval, which
+  is 0.01 second. An ACK in SRT is sent every fixed time interval.
+  The maximum and default ACK time interval is SYN.
+  See {{packet-acks}} for details.
 
 (2) On a loss report (NAK) packet reception:
 
 - Slow start phase ends;
 - Set the packet sending period PKT_SND_PERIOD as described in Step 5
-of section (1) above.
+  of section (1) above.
 
 (3) On a retransmission timeout (RTO) event:
 
 - Slow start phase ends;
 - Set the packet sending period PKT_SND_PERIOD as described in Step 5
-of section (1) above.
+  of section (1) above.
 
 #### Congestion Avoidance {#default-fileCC-congestion-avoidance}
 
@@ -2793,15 +2807,15 @@ in microseconds.
 
 Step 2. Update the value of LastRCTime to the current time:
 
-~~~
+```
 LastRCTime = currTime
-~~~
+```
 
 Step 3. Set the congestion window size to:
 
-~~~
+```
 CWND_SIZE = RECEIVING_RATE * (RTT + RC_INTERVAL) / 1000000 + 16
-~~~
+```
 
 Step 4. If there is packet loss reported by the receiver (bLoss=True):
 
@@ -2841,15 +2855,15 @@ calculate PKT_SND_PERIOD as follows:
 where
 
 - LastDecPeriod is the value of PKT_SND_PERIOD right before the last
-sending rate decrease has happened (on a loss report (NAK) packet
-reception), in microseconds. The initial value of LastDecPeriod
-is set to 1 microsecond;
+  sending rate decrease has happened (on a loss report (NAK) packet
+  reception), in microseconds. The initial value of LastDecPeriod
+  is set to 1 microsecond;
 - EST_LINK_CAPACITY is the estimated link capacity reported
-by the receiver within an ACK packet and smoothed at the sender side
-({{bandwidth-estimation}}), in packets per second;
+  by the receiver within an ACK packet and smoothed at the sender side
+  ({{bandwidth-estimation}}), in packets per second;
 - B is the estimated available bandwidth, in packets per second;
 - S is the SRT packet size (in terms of IP payload) in bytes.
-SRT treats 1500 bytes as a standard packet size.
+  SRT treats 1500 bytes as a standard packet size.
 
 A detailed explanation of the formulas used to calculate the increase
 in sending rate can be found in {{GuAnAO}}. UDT's available
@@ -2886,9 +2900,9 @@ a. Keep the sending rate at the same level;
 
 b. Update the value of LastDecPeriod:
 
-~~~
+```
 LastDecPeriod = PKT_SND_PERIOD
-~~~
+```
 
 c. Stop.
 
@@ -2905,15 +2919,15 @@ period PKT_SND_PERIOD;
 
 b. Increase the value of packet sending period:
 
-~~~
+```
 PKT_SND_PERIOD = 1.03 * PKT_SND_PERIOD
-~~~
+```
 
 c. Update AvgNAKNum:
 
-~~~
+```
 AvgNAKNum = 0.97 * AvgNAKNum + 0.03 * NAKCount
-~~~
+```
 
 d. Reset NAKCount and DecCount values to 1;
 
@@ -2944,9 +2958,9 @@ than the LastDecSeq.
 The coefficients used in the formulas above have been slightly modified
 to reduce the amount by which the sending rate decreases.
 
-Step 4. If DecCount <= 5, and NAKCount == DecCount * DecRandom:
+Step 4. If DecCount <= 5, and NAKCount == DecCount \* DecRandom:
 
-a. Update SND period: SND = 1.03 * SND;
+a. Update SND period: SND = 1.03 \* SND;
 
 b. Increase DecCount and NAKCount by 1;
 
@@ -3019,17 +3033,17 @@ to count blocks in the packet payload.
 
 #### AES-CTR Initialisation Vector (IV)
 
-The Initialisation Vector (IV) for the AES-CTR encryption mode is derived 
+The Initialisation Vector (IV) for the AES-CTR encryption mode is derived
 by exclusive ORing the first 112 bits of the Salt provided in the Keying Material ({{sec-ctrlpkt-km}})
 with the packet sequence number (PktSeqNo) in the SRT header, and left-shifting the resulting value by 16 bits:
 
-~~~~~~~~~~~
+```
 IV = (MSB(112, Salt) XOR PktSeqNo) << 16
-~~~~~~~~~~~
+```
 
 Thus the counter (keystream) used by the AES engine is the 128-bit value obtained by concatenating the IV with the block counter ("ctr"):
 
-~~~~
+```
  *    0   1   2   3   4   5  6   7   8   9   10  11  12  13  14  15   bytes
  * +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+  ^
  * |                   0s                  |   PktSeqNo    |   0s  |  |
@@ -3042,21 +3056,22 @@ Thus the counter (keystream) used by the AES engine is the 128-bit value obtaine
  * +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
  * |                   0s                                 |   ctr  |
  * +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
-~~~~
+```
 
 To avoid using the same keystream twice the payload size MUST be less than 2^16 blocks of 128 bits.
 
 #### AES-GCM Initialisation Vector (IV)
 
-The Initialisation Vector (IV) for the AES-GCM encryption mode is derived 
+The Initialisation Vector (IV) for the AES-GCM encryption mode is derived
 by exclusive ORing the first 96 bits of the Salt provided in the Keying Material ({{sec-ctrlpkt-km}})
 with the packet sequence number (PktSeqNo) in the SRT header:
 
-~~~~~~~~~~~
+```
 IV = MSB(96, Salt) XOR PktSeqNo
-~~~~~~~~~~~
+```
 
 Each outbound packet uses a 12-octet IV and an encryption key to form two outputs ({{RFC7714}}):
+
 - a 16-octet first key block, which is used in forming the authentication tag, and
 - a keystream of octets, formed in blocks of 16 octets each.
 
@@ -3070,9 +3085,9 @@ The short-lived SEK of length KLen is generated by the sender using a pseudo-ran
 and transmitted within the stream, wrapped with another longer-term key,
 the Key Encrypting Key (KEK), using a known AES key wrap protocol.
 
-~~~~~~~~~~~
+```
 SEK  = PRNG(KLen)
-~~~~~~~~~~~
+```
 
 The KLen can be 128, 192, and 256 bits based on the configuration exchanged in the KM packet
 ({{sec-ctrlpkt-km}}).
@@ -3161,11 +3176,11 @@ so the receiver will still have the ability to decrypt it.
 
 On the sending side SEK, Salt and KEK are generated in the following way:
 
-~~~~~~~~~~~
+```
 SEK  = PRNG(KLen)
 Salt = PRNG(128)
 KEK = PBKDF2(passphrase, LSB(64,Salt), Iter, KLen)
-~~~~~~~~~~~
+```
 
 where
 
@@ -3176,9 +3191,9 @@ where
 - Iter=2048 defines the number of iterations for PBKDF2;
 - KLen is a field of the KM message.
 
-~~~~~~~~~~~
+```
 Wrap = AESkw(KEK, SEK)
-~~~~~~~~~~~
+```
 
 where AESkw(KEK, SEK) is the key wrapping function {{RFC3394}}.
 
@@ -3186,15 +3201,15 @@ where AESkw(KEK, SEK) is the key wrapping function {{RFC3394}}.
 
 The encryption of the payload of the SRT data packet is done with AES-CTR
 
-~~~~~~~~~~~
+```
 EncryptedPayload = AES_CTR_Encrypt(SEK, IV, UnencryptedPayload)
-~~~~~~~~~~~
+```
 
 where the Initialization Vector (IV) is derived as
 
-~~~~~~~~~~~
+```
 IV = (MSB(112, Salt) << 2) XOR (PktSeqNo)
-~~~~~~~~~~~
+```
 
 PktSeqNo is the value of the Packet Sequence Number field of the SRT data packet.
 
@@ -3209,9 +3224,9 @@ be extracted from the Keying Material message.
 The Keying Material message contains the AES-wrapped {{RFC3394}} SEK used by the encoder.
 The Key-Encryption Key (KEK) required to unwrap the SEK is calculated as:
 
-~~~~~~~~~~~
+```
 KEK = PBKDF2(passphrase, LSB(64,Salt), Iter, KLen)
-~~~~~~~~~~~
+```
 
 where
 
@@ -3222,9 +3237,9 @@ where
 - Iter=2048 defines the number of iterations for PBKDF2;
 - KLen is a field of the KM message.
 
-~~~~~~~~~~~
+```
 SEK = AESkuw(KEK, Wrap)
-~~~~~~~~~~~
+```
 
 where AESkuw(KEK, Wrap) is the key unwrapping function.
 
@@ -3232,15 +3247,15 @@ where AESkuw(KEK, Wrap) is the key unwrapping function.
 
 The decryption of the payload of the SRT data packet is done with AES-CTR
 
-~~~~~~~~~~~
+```
 DecryptedPayload = AES_CTR_Encrypt(SEK, IV, EncryptedPayload)
-~~~~~~~~~~~
+```
 
 where the Initialization Vector (IV) is derived as
 
-~~~~~~~~~~~
+```
 IV = (MSB(112, Salt) << 2) XOR (PktSeqNo)
-~~~~~~~~~~~
+```
 
 PktSeqNo is the value of the Packet Sequence Number field of the SRT data packet.
 
@@ -3316,37 +3331,37 @@ Therefore it has some vulnerabilities similar to TCP {{RFC6528}}:
 
 - A peer tells a counterpart its public IP during the handshake that is visible to any attacker.
 - An attacker may potentially count the number of SRT processes behind a Network
-Address Translator (NAT) by establishing multiple SRT connections and tracking
-the ranges of SRT Socket IDs. If a random Socket ID is generated for the first
-connection, subsequent connections may get consecutive SRT Socket IDs. Assuming
-one system runs only one SRT process, for example, then an attacker can estimate
-the number of systems behind a NAT.
+  Address Translator (NAT) by establishing multiple SRT connections and tracking
+  the ranges of SRT Socket IDs. If a random Socket ID is generated for the first
+  connection, subsequent connections may get consecutive SRT Socket IDs. Assuming
+  one system runs only one SRT process, for example, then an attacker can estimate
+  the number of systems behind a NAT.
 - Similarly, the possibility of attack depends on the implementation of the initial
-sequence number (ISN) generation. If an ISN is not generated randomly for each
-connection, an attacker may potentially count the number of systems behind a
-Network Address Translator (NAT) by establishing a number of SRT connections and
-identifying the number of different sequence number "spaces", given that no SRT
-packet headers are encrypted.
+  sequence number (ISN) generation. If an ISN is not generated randomly for each
+  connection, an attacker may potentially count the number of systems behind a
+  Network Address Translator (NAT) by establishing a number of SRT connections and
+  identifying the number of different sequence number "spaces", given that no SRT
+  packet headers are encrypted.
 - An eavesdropper can hijack existing connections only if it steals the IP and
-port of one of the parties. If some stream addresses an existing SRT receiver
-by its SRT socket ID, IP, and port number, but arrives from a different IP or
-port, the SRT receiver ignores it.
+  port of one of the parties. If some stream addresses an existing SRT receiver
+  by its SRT socket ID, IP, and port number, but arrives from a different IP or
+  port, the SRT receiver ignores it.
 - SRT has a certain protection from DoS attacks, see {{handshake-messages}}.
 
 There are some important considerations regarding the encryption feature of SRT:
 
 - The SEK must be changed at an appropriate refresh interval to avoid the risk
-associated with the use of security keys over a long period of time.
+  associated with the use of security keys over a long period of time.
 - The shared secret for KEK generation must be carefully configured by a
-security officer responsible for security policies, enforcing encryption, and
-limiting key size selection.
-
+  security officer responsible for security policies, enforcing encryption, and
+  limiting key size selection.
 
 # IANA Considerations
 
 This document makes no requests of the IANA.
 
 # Contributors
+
 {:numbered="false"}
 
 This specification is based on the SRT Protocol Technical Overview {{SRTTO}}
@@ -3368,6 +3383,7 @@ But we appreciate the help, contribution, integrations and feedback of the
 SRT and SRT Alliance community.
 
 # Acknowledgments
+
 {:numbered="false"}
 
 The basis of the SRT protocol and its implementation was
@@ -3385,13 +3401,14 @@ For any single packet sequence number,
 it uses the original sequence number in the field. The first bit
 MUST start with "0".
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |0|                   Sequence Number                           |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #single-sequence-number title="Single sequence numbers coding"}
 
 For any consecutive packet sequence numbers that the difference between
@@ -3399,7 +3416,7 @@ the last and first is more than 1, only record the first (a) and the
 the last (b) sequence numbers in the list field, and modify the
 the first bit of a to "1".
 
-~~~
+```
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -3407,7 +3424,8 @@ the first bit of a to "1".
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |0|                   Sequence Number b (last)                  |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-~~~
+```
+
 {: #list-sequence-numbers title="Range of sequence numbers coding"}
 
 # SRT Access Control {#sec-srt-access-control}
@@ -3447,15 +3465,15 @@ The content starts with a `:` or `{` character identifying its format:
 
 The form of the key-value pair is
 
-~~~
+```
 key1=value1,key2=value2,...
-~~~
+```
 
 ## Standard Keys
 
 Beside the general syntax, there are several top-level keys treated as standard keys.
 All single letter key definitions, including those not listed in this section, are reserved for future use.
-Users can additionally use custom key definitions with user_* or companyname_* prefixes,
+Users can additionally use custom key definitions with user*\* or companyname*\* prefixes,
 where user and companyname are to be replaced with an actual user or company name.
 
 The existing key values MUST NOT be extended, and MUST NOT differ from those described in this section.
@@ -3477,6 +3495,7 @@ The following keys are standard:
   and authorization are negotiated over a separate connection first, and then the session ID is used here alone.
 
 - t: Type specifies the purpose of the connection. Several standard types are defined:
+
   - stream (default, if not specified): for exchanging the user-specified payload for an application-defined purpose,
   - file: for transmitting a file where r is the filename,
   - auth: for exchanging sensible data. The r value states its purpose. No specific possible values for that are known so far (for future use).
@@ -3494,17 +3513,17 @@ and is therefore required to know what the caller is attempting to do.
 
 The example content of the Stream ID is the following:
 
-~~~
+```
 #!::u=admin,r=bluesbrothers1_hi
-~~~
+```
 
 It specifies the username and the resource name of the stream to be served to the caller.
 
 The next example specifies that the file is expected to be transmitted from the caller to the listener and its name is results.csv:
 
-~~~
+```
 #!::u=johnny,t=file,m=publish,r=results.csv
-~~~
+```
 
 # Changelog
 
